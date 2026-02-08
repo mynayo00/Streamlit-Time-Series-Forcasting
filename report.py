@@ -3,5 +3,7 @@ import pandas as pd
 import numpy as np
 
 def analysis():
-    st.subheader('Nama saya Nadya Aswarani')
-    st.write('Saya seorang Data Scientist')
+    data = pd.read_csv(r'C:\Users\USER\Documents\Dibimbing-DESKTOP-SII4I4B\Streamlit-Time-Series-Forcasting\data_clean.csv')
+    st.bar_chart(data)
+
+
