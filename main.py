@@ -6,7 +6,7 @@ st.title('Report Sales 2019')
 st.sidebar.title('Navigasi')
 
 page = st.sidebar.radio('Pilih halaman', ['Report', 'Prediction','Contact'])
-data = pd.read_csv(r'C:\Users\USER\Documents\Dibimbing-DESKTOP-SII4I4B\Streamlit-Time-Series-Forcasting\data_clean.csv')
+data = pd.read_csv("data_clean.csv")
 
 if page == 'Report' :
     import report
