@@ -9,9 +9,9 @@ st.sidebar.title('Navigasi')
 page = st.sidebar.radio('Pilih halaman', ['Report', 'Prediction','Contact'])
 data = pd.read_csv("data_clean.csv")
 
-if page == 'Report' :
+if page == 'Report':
     import report
-    report.analysis()
+    report.analysis(data) 
 elif page == 'Prediction' :
     import predict
     predict.prediction()
